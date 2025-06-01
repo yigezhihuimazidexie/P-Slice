@@ -1,4 +1,4 @@
-mikolka.vslice.ui;
+package mikolka.vslice.ui;
 
 import mikolka.compatibility.ui.StoryModeHooks;
 import mikolka.compatibility.ModsHelper;
