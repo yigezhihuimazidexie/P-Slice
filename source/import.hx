@@ -81,7 +81,7 @@ import backend.ui.*; //Psych-UI
 import objects.Alphabet;
 import objects.BGSprite;
 
-import states.PlayState;
+import mikolka.vslice.ui.StoryMenuState;
 import mikolka.vslice.ui.*;
 import states.StoryMenuState;
 import states.LoadingState;
