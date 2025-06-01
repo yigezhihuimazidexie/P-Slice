@@ -140,7 +140,7 @@ class FreeplayState extends MusicBeatSubstate
 
 	var diffIdsCurrent:Array<String> = [];
 	// List of available difficulties for the total song list, without `-variation` at the end (no duplicates or nulls).
-	var diffIdsTotal:Array<String> = ['easy', "normal", "hard"]; // ? forcing this diff order
+	var diffIdsTotal:Array<String> = ["hard"]; // ? forcing this diff order
 
 	var curSelected:Int = 0;
 	var currentDifficulty:String = Constants.DEFAULT_DIFFICULTY;
@@ -262,7 +262,6 @@ class FreeplayState extends MusicBeatSubstate
 	override function create():Void
 	{
 		// ? Psych might've reloaded the mod list. Make sure we select current character's mod for the style
-		SongMenuItem.reloadGlobalItemData();
 		var saveBox = VsliceOptions.LAST_MOD;
 		if (ModsHelper.isModDirEnabled(saveBox.mod_dir))
 			ModsHelper.loadModDir(saveBox.mod_dir);
@@ -518,7 +517,7 @@ class FreeplayState extends MusicBeatSubstate
 		charSelectHint.alignment = CENTER;
 		charSelectHint.font = "5by7";
 		charSelectHint.color = 0xFF5F5F5F;
-		charSelectHint.text = controls.mobileC ? 'Touch [ X ] to change characters' : 'Press [ ${FunkinControls.FREEPLAY_CHAR_name()} ] to change characters'; // ?! ${controls.getDialogueNameFromControl(FREEPLAY_CHAR_SELECT, true)}
+		charSelectHint.text = controls.mobileC ? 'Touch [ X ] to change characters' : 'Press [N] to enter the chat box';
 		charSelectHint.y -= 100;
 		FlxTween.tween(charSelectHint, {y: charSelectHint.y + 100}, 0.8, {ease: FlxEase.quartOut});
 
@@ -792,10 +791,6 @@ class FreeplayState extends MusicBeatSubstate
 	 */
 	public function generateSongList(filterStuff:Null<SongFilter>, force:Bool = false, onlyIfChanged:Bool = true):Void
 	{
-		#if freeplay_profile
-		trace('Generating song list');
-		var timeStart = Sys.time();
-		#end
 		var tempSongs:Array<Null<FreeplaySongData>> = songs;
 
 		if (filterStuff != null)
@@ -835,6 +830,9 @@ class FreeplayState extends MusicBeatSubstate
 		currentFilteredSongs = tempSongs;
 		curSelected = 0;
 
+		var hsvShader:HSVShader = null; //? make this disablable
+		if(VsliceOptions.SHADERS) hsvShader = new HSVShader();
+
 		var randomCapsule:SongMenuItem = grpCapsules.recycle(SongMenuItem);
 		randomCapsule.init(FlxG.width, 0, null, styleData);
 		randomCapsule.onConfirm = function()
@@ -849,7 +847,6 @@ class FreeplayState extends MusicBeatSubstate
 		randomCapsule.favIconBlurred.visible = false;
 		randomCapsule.ranking.visible = false;
 		randomCapsule.blurredRanking.visible = false;
-		randomCapsule.hsvShader = SongMenuItem.static_hsvShader;
 		if (fromCharSelect == false)
 		{
 			randomCapsule.initJumpIn(0, force);
@@ -858,6 +855,7 @@ class FreeplayState extends MusicBeatSubstate
 		{
 			randomCapsule.forcePosition();
 		}
+		randomCapsule.hsvShader = hsvShader;
 		grpCapsules.add(randomCapsule);
 
 		for (i in 0...tempSongs.length)
@@ -880,7 +878,7 @@ class FreeplayState extends MusicBeatSubstate
 			funnyMenu.songText.visible = false;
 			funnyMenu.favIcon.visible = tempSong.isFav;
 			funnyMenu.favIconBlurred.visible = tempSong.isFav;
-			funnyMenu.hsvShader = SongMenuItem.static_hsvShader;
+			funnyMenu.hsvShader = hsvShader;
 
 			funnyMenu.newText.animation.curAnim.curFrame = 45 - ((i * 4) % 45);
 			funnyMenu.checkClip();
@@ -895,10 +893,6 @@ class FreeplayState extends MusicBeatSubstate
 
 		changeSelection();
 		changeDiff(0, true);
-		#if freeplay_profile
-		trace('Initing songs took ${Sys.time()-timeStart}');
-		//var timeStart = Sys.time();
-		#end
 	}
 
 	/**
@@ -1295,36 +1289,36 @@ class FreeplayState extends MusicBeatSubstate
 	function tryOpenCharSelect():Void
 	{
 		// Check if we have ACCESS to character select!
-		trace('Is Pico unlocked? ${PlayerRegistry.instance.fetchEntry('pico')?.isUnlocked()}');
-		trace('Number of characters: ${PlayerRegistry.instance.countUnlockedCharacters()}');
+		//trace('Is Pico unlocked? ${PlayerRegistry.instance.fetchEntry('pico')?.isUnlocked()}');
+		//trace('Number of characters: ${PlayerRegistry.instance.countUnlockedCharacters()}');
 
-		if (PlayerRegistry.instance.countUnlockedCharacters() > 1)
-		{
-			trace('Opening character select!');
-		}
-		else
-		{
-			trace('Not enough characters unlocked to open character select!');
-			FunkinSound.playOnce(Paths.sound('cancelMenu'));
-			return;
-		}
+		//if (PlayerRegistry.instance.countUnlockedCharacters() > 1)
+		//{
+			//trace('Opening character select!');
+		//}
+		//else
+		//{
+			//trace('Not enough characters unlocked to open character select!');
+			//FunkinSound.playOnce(Paths.sound('cancelMenu'));
+			//return;
+		//}
 
-		busy = true;
+		//busy = true;
 
-		FunkinSound.playOnce(Paths.sound('confirmMenu'));
+		//FunkinSound.playOnce(Paths.sound('confirmMenu'));
 
-		if (dj != null)
-		{
-			dj.toCharSelect();
-		}
+		//if (dj != null)
+		//{
+			//dj.toCharSelect();
+		//}
 
 		// Get this character's transition delay, with a reasonable default.
-		var transitionDelay:Float = currentCharacter.getFreeplayDJData()?.getCharSelectTransitionDelay() ?? 0.25;
+		//var transitionDelay:Float = currentCharacter.getFreeplayDJData()?.getCharSelectTransitionDelay() ?? 0.25;
 
-		new FlxTimer().start(transitionDelay, _ ->
-		{
-			transitionToCharSelect();
-		});
+		//new FlxTimer().start(transitionDelay, _ ->
+		//{
+			//transitionToCharSelect();
+		//});
 	}
 
 	function transitionToCharSelect():Void
