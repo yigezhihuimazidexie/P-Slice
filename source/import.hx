@@ -83,7 +83,6 @@ import objects.BGSprite;
 
 import states.PlayState;
 import mikolka.vslice.ui.*;
-import mikolka.vslice.ui.StoryMenuState;
 import states.LoadingState;
 
 #if flxanimate
@@ -110,7 +109,7 @@ import flixel.tweens.FlxTween;
 import flixel.group.FlxSpriteGroup;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.addons.transition.FlxTransitionableState;
-import shaders.flixel.system.FlxShader;
+import flixel.system.FlxAssets.FlxShader;
 import flixel.ui.FlxButton;
 import flixel.addons.display.FlxBackdrop;
 
