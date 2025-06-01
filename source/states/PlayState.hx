@@ -24,7 +24,7 @@ import openfl.utils.Assets as OpenFlAssets;
 import openfl.events.KeyboardEvent;
 import haxe.Json;
 
-
+import states.StoryMenuState;
 
 import lime.math.Matrix3;
 import mikolka.funkin.Scoring;
@@ -57,7 +57,6 @@ import psychlua.LuaUtils;
 #end
 
 #if HSCRIPT_ALLOWED
-import psychlua.HScript;
 import psychlua.HScript.HScriptInfos;
 import crowplexus.iris.Iris;
 import crowplexus.hscript.Expr.Error as IrisError;
@@ -409,7 +408,7 @@ class PlayState extends MusicBeatState
 			if(SONG.gfVersion == null || SONG.gfVersion.length < 1) SONG.gfVersion = 'gf'; //Fix for the Chart Editor
 			gf = new Character(0, 0, SONG.gfVersion);
 			startCharacterPos(gf);
-			gfGroup.scrollFactor.set(1, 1);
+			//gfGroup.scrollFactor.set(0.95, 0.95);
 			gfGroup.add(gf);
 		}
 
@@ -779,7 +778,7 @@ class PlayState extends MusicBeatState
 			case 2:
 				if(gf != null && !gfMap.exists(newCharacter)) {
 					var newGf:Character = new Character(0, 0, newCharacter);
-					newGf.scrollFactor.set(1, 1);
+					newGf.scrollFactor.set(0.95, 0.95);
 					gfMap.set(newCharacter, newGf);
 					gfGroup.add(newGf);
 					startCharacterPos(newGf);
@@ -862,7 +861,7 @@ class PlayState extends MusicBeatState
 	function startCharacterPos(char:Character, ?gfCheck:Bool = false) {
 		if(gfCheck && char.curCharacter.startsWith('gf')) { //IF DAD IS GIRLFRIEND, HE GOES TO HER POSITION
 			char.setPosition(GF_X, GF_Y);
-			char.scrollFactor.set(1, 1);
+			char.scrollFactor.set(0.95, 0.95);
 			char.danceEveryNumBeats = 2;
 		}
 		char.x += char.positionArray[0];
@@ -2665,7 +2664,7 @@ class PlayState extends MusicBeatState
 					}, sticker)));
 			}
 			else {
-				openSubState(new StickerSubState(null, (sticker) -> new StoryMenuState(sticker)));
+				openSubState(new StickerSubState(null, (sticker) -> new MainMenuState(sticker)));
 			}
 			return;
 		}
