@@ -92,7 +92,7 @@ class StoryMenuState extends MusicBeatState
 			FlxTransitionableState.skipNextTransIn = true;
 			persistentUpdate = false;
 			//MusicBeatState.switchState(new ErrorState("NO LEVELS ADDED FOR STORY MODE\n\nPress " + accept + " to go to the Week Editor Menu.\nPress " + reject + " to return to Main Menu.",
-				function() MusicBeatState.switchState(new states.editors.WeekEditorState()),
+				//function() MusicBeatState.switchState(new states.editors.WeekEditorState()),
 				function() MusicBeatState.switchState(new MainMenuState())));
 			return;
 		}
