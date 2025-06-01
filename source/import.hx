@@ -81,9 +81,9 @@ import backend.ui.*; //Psych-UI
 import objects.Alphabet;
 import objects.BGSprite;
 
-import mikolka.vslice.ui.StoryMenuState;
+import states.PlayState;
 import mikolka.vslice.ui.*;
-import states.StoryMenuState;
+import mikolka.vslice.ui.StoryMenuState;
 import states.LoadingState;
 
 #if flxanimate
