@@ -136,6 +136,10 @@ class FreeplayState extends MusicBeatSubstate
 	 */
 	public static final FADE_OUT_END_VOLUME:Float = 0.0;
 
+	public static var loveInputText:PsychUIInputText;
+	public static var isshowing:Bool=false;
+	public static var isclose:Bool=false;
+
 	var songs:Array<Null<FreeplaySongData>> = [];
 
 	var diffIdsCurrent:Array<String> = [];
@@ -449,6 +453,9 @@ class FreeplayState extends MusicBeatSubstate
 
 		grpDifficulties = new FlxTypedSpriteGroup<DifficultySprite>(-300, 80);
 		add(grpDifficulties);
+
+		loveInputText = new PsychUIInputText(FlxG.width / 2 - 100,FlxG.height + 500,200, "", 16 );
+        	add(loveInputText);
 
 		exitMovers.set([grpDifficulties], {
 			x: -300,
@@ -1487,6 +1494,139 @@ class FreeplayState extends MusicBeatSubstate
 			charSelectHint.alpha = FlxMath.lerp(0.3, 0.9, targetAmt);
 		}
 
+		var text = loveInputText.text.trim().toLowerCase();
+		FlxG.mouse.visible = true;
+
+		function isback(cur:Int):Void 
+		{
+			if(!busy){
+				busy = true;
+				FlxTween.globalManager.clear();
+				FlxTimer.globalManager.clear();
+				if (dj != null)
+					dj.onIntroDone.removeAll();
+	
+				FunkinSound.playOnce(Paths.sound('cancelMenu'));
+				FreeplayHelpers.exitFreeplay();
+	
+				var longestTimer:Float = 0;
+	
+				// //? edited so that freeplay color works
+				// FlxTween.color(pinkBack, 0.25, pinkBack.color, 0xFFFFD0D5, {ease: FlxEase.quadOut});
+				// FlxTween.color(bgDad, 0.33, 0xFFFFFFFF, 0xFF555555, {ease: FlxEase.quadOut});
+				backingCard?.disappear();
+	
+				#if TOUCH_CONTROLS_ALLOWED
+				touchPad.forEachAlive(function(button:TouchButton)
+				{
+					if (button.tag == 'UP' || button.tag == 'DOWN')
+						FlxTween.tween(button, {x: button.x - 350}, 1.2, {ease: FlxEase.backOut});
+					else
+						FlxTween.tween(button, {x: button.x + 450}, 1.2, {ease: FlxEase.backOut});
+				});
+				#end
+	
+				for (grpSpr in exitMovers.keys())
+				{
+					var moveData:Null<MoveData> = exitMovers.get(grpSpr);
+					if (moveData == null)
+						continue;
+	
+					for (spr in grpSpr)
+					{
+						if (spr == null)
+							continue;
+	
+						var funnyMoveShit:MoveData = moveData;
+	
+						var moveDataX = funnyMoveShit.x ?? spr.x;
+						var moveDataY = funnyMoveShit.y ?? spr.y;
+						var moveDataSpeed = funnyMoveShit.speed ?? 0.2;
+						var moveDataWait = funnyMoveShit.wait ?? 0.0;
+	
+						FlxTween.tween(spr, {x: moveDataX, y: moveDataY}, moveDataSpeed, {ease: FlxEase.expoIn});
+	
+						longestTimer = Math.max(longestTimer, moveDataSpeed + moveDataWait);
+					}
+				}
+	
+				for (caps in grpCapsules.members)
+				{
+					caps.doJumpIn = false;
+					caps.doLerp = false;
+					caps.doJumpOut = true;
+				}
+	
+				if (Type.getClass(_parentState) == MainMenuState)
+				{
+					_parentState.persistentUpdate = false;
+					_parentState.persistentDraw = true;
+				}
+				if (Type.getClass(_parentState) == StoryMenuState)
+					{
+						_parentState.persistentUpdate = false;
+						_parentState.persistentDraw = true;
+					}
+	
+				new FlxTimer().start(longestTimer, (_) ->
+				{
+					FlxTransitionableState.skipNextTransIn = true;
+					FlxTransitionableState.skipNextTransOut = true;
+					//if (Type.getClass(_parentState) == MainMenuState)
+					//{
+						//FunkinSound.playMusic('freakyMenu', {
+							//overrideExisting: true,
+							//restartTrack: false
+						//});
+						//FlxG.sound.music.fadeIn(4.0, 0.0, 1.0);
+						//close();
+					//}
+					//else
+					//{
+						StoryMenuState.curWeek = cur;
+						FlxG.switchState(new StoryMenuState());
+					//}
+				});
+				//else if (accepted) // ? bugfix
+				//{
+					//grpCapsules.members[curSelected].onConfirm();
+				//}
+			}
+		}
+					
+		if(text == "end"&&!busy)
+		{
+			FlxG.camera.flash(FlxColor.PINK, 0.5);
+			FlxG.sound.play(Paths.sound('confirmMenu'));
+			unlockWeek("1",true);
+			isback(4);
+		} 
+		else if(text == "sus"&&!busy) 
+		{
+			FlxG.camera.flash(FlxColor.PINK, 0.5);
+			FlxG.sound.play(Paths.sound('confirmMenu'));
+			unlockWeek("sky",true);
+			isback(6);
+		} 
+		else if(text == "love"&&!busy)
+		{
+			FlxG.camera.flash(FlxColor.PINK, 0.5);
+			FlxG.sound.play(Paths.sound('confirmMenu'));
+			unlockWeek("love",true);
+			isback(5);
+		}
+		else if(text == "close"&&!busy&&!isclose)
+		{
+			isclose=true;
+			FlxG.camera.flash(FlxColor.PINK, 0.5);
+			FlxG.sound.play(Paths.sound('confirmMenu'));
+			unlockWeek("1",false);
+			unlockWeek("sky",false);
+			unlockWeek("love",false);
+		}
+		
+
+
 		#if FEATURE_DEBUG_FUNCTIONS
 		if (FlxG.keys.justPressed.P)
 		{
@@ -1751,7 +1891,8 @@ class FreeplayState extends MusicBeatSubstate
 			diffSelLeft.setPress(false);
 		}
 
-		if (controls.BACK #if TOUCH_CONTROLS_ALLOWED || touchPad?.buttonB.justPressed #end && !busy)
+		var text = loveInputText.text.trim().toLowerCase();
+		if (controls.BACK #if TOUCH_CONTROLS_ALLOWED || touchPad?.buttonB.justPressed #end && !busy&&text=="")
 		{
 			busy = true;
 			FlxTween.globalManager.clear();
