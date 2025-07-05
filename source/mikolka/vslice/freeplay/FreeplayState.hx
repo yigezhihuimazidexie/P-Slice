@@ -43,6 +43,18 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
+import openfl.utils.Assets;
+import openfl.net.FileReference;
+import openfl.events.Event;
+import openfl.events.IOErrorEvent;
+import flash.net.FileFilter;
+import lime.system.Clipboard;
+import objects.MenuItem;
+import sys.io.File;
+import sys.FileSystem;
+import haxe.Json;
+import openfl.events.KeyboardEvent;
+import flixel.util.FlxSave;
 
 using mikolka.funkin.custom.FunkinTools;
 using mikolka.funkin.utils.ArrayTools;
