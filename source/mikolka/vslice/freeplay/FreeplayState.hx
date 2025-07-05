@@ -789,6 +789,52 @@ class FreeplayState extends MusicBeatSubstate
 	var currentFilter:SongFilter = null;
 	var currentFilteredSongs:Array<FreeplaySongData> = [];
 
+	public function unlockWeek(name:String,unlock:Bool):Void
+			{
+				#if sys
+				try {
+					var weekFilePath:String = "mods/rikkra/weeks/" + name + ".json";
+					
+					if (!FileSystem.exists(weekFilePath)) {
+						FlxG.switchState(new MainMenuState());
+						FunkinSound.playOnce(Paths.sound('cancelMenu'));
+						return;
+					}
+					
+					var jsonContent:String = File.getContent(weekFilePath);
+					var weekData:Dynamic = Json.parse(jsonContent);
+					
+					if (Reflect.hasField(weekData, "hideFreeplay")&&unlock) {
+						Reflect.setField(weekData, "hideFreeplay", false);
+						
+						File.saveContent(weekFilePath, Json.stringify(weekData, null, "    "));
+						
+						trace("Love week unlocked!");
+						FunkinSound.playOnce(Paths.sound('confirmMenu'));
+						
+					}
+					else if(Reflect.hasField(weekData, "hideFreeplay")&&!unlock)
+					{
+						Reflect.setField(weekData, "hideFreeplay", true);
+						
+						File.saveContent(weekFilePath, Json.stringify(weekData, null, "    "));
+						
+						trace("Love week unlocked!");
+						FunkinSound.playOnce(Paths.sound('confirmMenu'));
+					}
+					else {
+						FlxG.switchState(new MainMenuState());
+						FunkinSound.playOnce(Paths.sound('cancelMenu'));
+					}
+				} catch (e:Dynamic) {
+					FlxG.switchState(new MainMenuState());
+					FunkinSound.playOnce(Paths.sound('cancelMenu'));
+				}
+				#else
+				FlxG.switchState(new MainMenuState());
+				#end
+			}
+
 	/**
 	 * Given the current filter, rebuild the current song list.
 	 *
