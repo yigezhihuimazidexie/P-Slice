@@ -152,32 +152,49 @@ class CreditsState extends MusicBeatState
         descText.wordWrap = true;
         add(descText);
         
-        prevButton = new FlxButton(50, 450, "prev", function() changePage(-1));
-        prevButton.setGraphicSize(300, 80);
-        prevButton.label.size = 28;
-        prevButton.updateHitbox();
-        
-        prevButton = new FlxButton(50, 450, "上一页", function() changePage(-1));
-        nextButton = new FlxButton(50, 520, "下一页", function() changePage(1));
+      //  prevButton = new FlxButton(50, 450, "prev", function() changePage(-1));
+        //prevButton.setGraphicSize(300, 80);
+        //prevButton.label.size = 28;
+        //prevButton.updateHitbox();
 
-        function setupButton(btn:FlxButton) {
-            btn.setGraphicSize(300, 60);
+        function setupButton(btn:FlxButton, x:Float, y:Float) {
+            btn.setPosition(x, y);
+            btn.setGraphicSize(300,60);
             btn.updateHitbox();
-            btn.label.fieldWidth = btn.width;
-            btn.label.setFormat(Paths.font("vcr2.ttf"),28, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
-            btn.label.autoSize = false;
-            btn.label.wordWrap = false;
-            btn.label.offset.y = -5; 
+            
+            var label = new FlxText(0, 0, 200, btn.label.text, 24);
+            label.fieldWidth = btn.width;
+            label.autoSize = false;
+            label.wordWrap = false;
+            label.offset.y = -5; 
+            label.setFormat(Paths.font("vcr2.ttf"), 28, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+            btn.label = label;
+            
+            // 悬停效果
+            btn.onOver.callback = function() {
+                FlxTween.color(btn, 0.2, FlxColor.WHITE, 0x4488CCFF);
+            };
+            
+            btn.onOut.callback = function() {
+                FlxTween.color(btn, 0.2, 0x4488CCFF, FlxColor.WHITE);
+            };
         }
 
-        setupButton(prevButton);
-        setupButton(nextButton);
+        prevButton = new FlxButton(0, 0, "上一页", function() changePage(-1));
+        nextButton = new FlxButton(0, 0, "下一页", function() changePage(1));
+
+        setupButton(prevButton, 50, 450);
+        setupButton(nextButton, 50, 520);
         add(prevButton);
         add(nextButton);
 
         pageText = new FlxText(50, 600, 300, "Page 1/" + creditsData.length, 24);
         pageText.setFormat(Paths.font("vcr2.ttf"), 24, FlxColor.WHITE, CENTER);
         add(pageText);
+
+        #if TOUCH_CONTROLS_ALLOWED
+		addTouchPad('UP_DOWN', 'A_B');
+		#end
 
         
         
