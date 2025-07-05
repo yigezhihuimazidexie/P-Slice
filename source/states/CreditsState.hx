@@ -193,7 +193,7 @@ class CreditsState extends MusicBeatState
         add(pageText);
 
         #if TOUCH_CONTROLS_ALLOWED
-		addTouchPad('A_B');
+		addTouchPad('UP_DOWN', 'A_B');
 		#end
 
         
