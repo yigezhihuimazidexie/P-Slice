@@ -1720,7 +1720,15 @@ class FreeplayState extends MusicBeatSubstate
 		{
 			if (FunkinControls.FREEPLAY_CHAR #if TOUCH_CONTROLS_ALLOWED || touchPad?.buttonX.justPressed #end)
 			{
-				tryOpenCharSelect();
+				if(!isshowing)
+				{
+					FlxTween.tween(loveInputText, {y: FlxG.height - 50}, 0.7, {ease: FlxEase.quartInOut});
+					isshowing=true;
+				}
+				else{
+					FlxTween.tween(loveInputText, {y: FlxG.height + 500}, 0.7, {ease: FlxEase.quartInOut});
+					isshowing=false;
+				}
 			} //? Those are new too
 			else if (FlxG.keys.justPressed.CONTROL #if TOUCH_CONTROLS_ALLOWED || touchPad?.buttonC.justPressed #end)
 			{
