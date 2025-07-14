@@ -379,7 +379,7 @@ class PauseSubState extends MusicBeatSubstate
 					if (PlayState.isStoryMode)
 						{
 							PlayState.storyPlaylist = [];
-							openSubState(new StickerSubState(null, (sticker) -> new StoryMenuState(sticker)));
+							openSubState(new StickerSubState(null, (sticker) -> new MainMenuState(sticker)));
 						}
 						else
 						{
