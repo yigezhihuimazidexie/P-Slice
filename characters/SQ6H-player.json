@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				132,
+				117
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				45,
+				7
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				507,
+				-114
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				49,
+				37
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				96,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				203,
+				33
+			],
+			"anim": "cut",
+			"fps": 24,
+			"name": "cut",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/SQ6H",
+	"position": [
+		150,
+		220
+	],
+	"healthicon": "SQ6h1",
+	"flip_x": false,
+	"healthbar_colors": [
+		45,
+		0,
+		77
+	],
+	"camera_position": [
+		170,
+		-120
+	],
+	"sing_duration": 4,
+	"scale": 0.9
+}

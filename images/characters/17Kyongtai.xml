@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="17Kyongtai.png" width="7995" height="1600">
+  <SubTexture name="yongtai0002.png" x="0" y="0"  width="663" height="1485" frameX="-512" frameY="-131" frameWidth="1660" frameHeight="1660"/>
+  <SubTexture name="yongtai0001.png" x="663" y="0"  width="664" height="1487" frameX="-511" frameY="-129" frameWidth="1660" frameHeight="1660"/>
+  <SubTexture name="yongtai!0001.png" x="1327" y="0"  width="689" height="1495" frameX="-484" frameY="-121" frameWidth="1660" frameHeight="1660"/>
+  <SubTexture name="yongtai!0002.png" x="2016" y="0"  width="670" height="1495" frameX="-498" frameY="-121" frameWidth="1660" frameHeight="1660"/>
+  <SubTexture name="yongtai0003.png" x="2686" y="0"  width="664" height="1508" frameX="-528" frameY="-107" frameWidth="1660" frameHeight="1660"/>
+  <SubTexture name="yongtai0004.png" x="3350" y="0"  width="664" height="1519" frameX="-535" frameY="-95" frameWidth="1660" frameHeight="1660"/>
+  <SubTexture name="yongtai0005.png" x="4014" y="0"  width="664" height="1525" frameX="-541" frameY="-88" frameWidth="1660" frameHeight="1660"/>
+  <SubTexture name="yongtai0006.png" x="4678" y="0"  width="663" height="1525" frameX="-542" frameY="-88" frameWidth="1660" frameHeight="1660"/>
+  <SubTexture name="yongtai!0003.png" x="5341" y="0"  width="665" height="1550" frameX="-527" frameY="-65" frameWidth="1660" frameHeight="1660"/>
+  <SubTexture name="yongtai!0004.png" x="6006" y="0"  width="663" height="1575" frameX="-537" frameY="-39" frameWidth="1660" frameHeight="1660"/>
+  <SubTexture name="yongtai!0005.png" x="6669" y="0"  width="663" height="1589" frameX="-541" frameY="-24" frameWidth="1660" frameHeight="1660"/>
+  <SubTexture name="yongtai!0006.png" x="7332" y="0"  width="663" height="1600" frameX="-542" frameY="-13" frameWidth="1660" frameHeight="1660"/>
+</TextureAtlas>

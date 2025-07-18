@@ -1,0 +1,41 @@
+{
+    "storyName": "Your New Week",
+    "difficulties": "hard",
+    "hideFreeplay": false,
+    "weekBackground": "stage",
+    "weekBefore": "tutorial",
+    "freeplayColor": [
+        146,
+        113,
+        253
+    ],
+    "startUnlocked": true,
+    "hideStoryMode": false,
+    "songs": [
+        [
+            "finish",
+            "mic",
+            [
+                146,
+                113,
+                253
+            ]
+        ],
+        [
+            "on-the-sick",
+            "bf",
+            [
+                6,
+                213,
+                253
+            ]
+        ]
+    ],
+    "weekCharacters": [
+        "dad",
+        "bf",
+        "gf"
+    ],
+    "hiddenUntilUnlocked": false,
+    "weekName": "Custom Week"
+}

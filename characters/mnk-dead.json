@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				96,
+				191
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "Big Monika Retry End"
+		},
+		{
+			"offsets": [
+				0,
+				217
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "Big Monika Retry Start"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				201
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "Big Monika Retry Loop",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/big_monikia_death",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		100,
+		250
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

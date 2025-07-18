@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				17,
+				-2
+			],
+			"anim": "idle",
+			"fps": 20,
+			"name": "idle dance ALT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				9,
+				-46
+			],
+			"anim": "singDOWN",
+			"fps": 20,
+			"name": "BEATBOX DOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				69,
+				17
+			],
+			"anim": "singLEFT",
+			"fps": 20,
+			"name": "BEATBOX LEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-24,
+				17
+			],
+			"anim": "singRIGHT",
+			"fps": 20,
+			"name": "BEATBOX RIGHT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-10,
+				63
+			],
+			"anim": "singUP",
+			"fps": 20,
+			"name": "BEATBOX UP",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-30,
+				110
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "hey",
+			"indices": [],
+			"name": "HEY ALT"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/My BF Stylereanimal",
+	"position": [
+		90,
+		350
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		229
+	],
+	"camera_position": [
+		110,
+		-40
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

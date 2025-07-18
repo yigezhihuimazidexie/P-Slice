@@ -1,0 +1,2 @@
+Fades screen with hud to black
+Value1: How long it takes to fade (in steps)

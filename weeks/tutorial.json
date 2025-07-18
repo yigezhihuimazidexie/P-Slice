@@ -1,0 +1,32 @@
+{
+	"songs": [
+		[
+			"tutorial",
+			"gf",
+			[
+				255,
+				15,
+				0
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "hard,easy",
+	"weekCharacters": [
+		"",
+		"gf",
+		""
+	],
+	"storyName": "Your New Week",
+	"weekName": "Custom Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

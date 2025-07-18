@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="6H2.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="speak0000" x="0" y="0" width="333" height="718"/>
+	<SubTexture name="speak0001" x="0" y="0" width="333" height="718"/>
+	<SubTexture name="speak0002" x="333" y="0" width="322" height="716" frameX="-1" frameY="-2" frameWidth="333" frameHeight="718"/>
+	<SubTexture name="speak0003" x="333" y="0" width="322" height="716" frameX="-1" frameY="-2" frameWidth="333" frameHeight="718"/>
+	<SubTexture name="speak0004" x="655" y="0" width="317" height="715" frameX="-2" frameY="-3" frameWidth="333" frameHeight="718"/>
+	<SubTexture name="speak0005" x="655" y="0" width="317" height="715" frameX="-2" frameY="-3" frameWidth="333" frameHeight="718"/>
+</TextureAtlas>

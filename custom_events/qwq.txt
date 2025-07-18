@@ -1,0 +1,5 @@
+这是控制开局黑色图片显示的
+输入1关闭 输入a开启
+
+This is the black picture of the control opening
+Input 1 off Input a on

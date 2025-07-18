@@ -1,0 +1,10 @@
+{
+	"songRating": 7,
+	"albumId": "volume3",
+	"freeplayCharacter": "bf",
+	"freeplaySongLength": 120,
+	"freeplayPrevEnd": 20,
+	"altInstrumentalSongs": "tutorial",
+	"allowErectVariants": true,
+	"freeplayPrevStart": 0
+}

@@ -1,0 +1,69 @@
+{
+    "storyName": "Your New Week",
+    "difficulties": "hard",
+    "hideFreeplay": false,
+    "weekBackground": "1",
+    "weekBefore": "tutorial",
+    "freeplayColor": [
+        146,
+        113,
+        253
+    ],
+    "startUnlocked": true,
+    "hideStoryMode": false,
+    "songs": [
+        [
+            "Hope",
+            "6h1",
+            [
+                146,
+                113,
+                253
+            ]
+        ],
+        [
+            "Afterglow",
+            "6h1",
+            [
+                146,
+                113,
+                253
+            ]
+        ],
+        [
+            "kawago",
+            "icon-yongtai",
+            [
+                255,
+                255,
+                255
+            ]
+        ],
+        [
+            "come-on",
+            "icon-yongtai",
+            [
+                255,
+                255,
+                255
+            ]
+        ],
+        [
+            "damn",
+            "icon-yongtai",
+            [
+                255,
+                255,
+                255
+            ]
+        ]
+    ],
+    "weekCharacters": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "hiddenUntilUnlocked": false,
+    "weekName": "Custom Week"
+}

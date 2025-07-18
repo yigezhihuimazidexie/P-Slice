@@ -1,0 +1,8 @@
+Makes your Healthbar + Icons fade
+
+
+Value 1: How long it takes for the Healthbar to fade
+Value 2: What Opacity you want it to be at (1-0)
+(Value 2 defualts to 0 if nothing is put)
+(1 = Fully Visible) 
+(0 = Fully Invisible)

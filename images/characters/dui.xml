@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="dui.png" width="3897" height="2210">
+  <SubTexture name="idle03" x="0" y="0"  width="1302" height="1128" frameX="-7" frameY="-307" frameWidth="1362" frameHeight="1650"/>
+  <SubTexture name="idle02" x="1302" y="0"  width="1302" height="1125" frameX="-7" frameY="-310" frameWidth="1362" frameHeight="1650"/>
+  <SubTexture name="idle00" x="2604" y="0"  width="1293" height="1106" frameX="-6" frameY="-329" frameWidth="1362" frameHeight="1650"/>
+  <SubTexture name="idle01" x="2604" y="1106"  width="1266" height="1104" frameX="-39" frameY="-331" frameWidth="1362" frameHeight="1650"/>
+  <SubTexture name="idle04" x="0" y="0"  width="1302" height="1128" frameX="-7" frameY="-307" frameWidth="1362" frameHeight="1650"/>
+  <SubTexture name="idle05" x="0" y="0"  width="1302" height="1128" frameX="-7" frameY="-307" frameWidth="1362" frameHeight="1650"/>
+</TextureAtlas>

@@ -1,0 +1,9 @@
+Changes the Scrolltype (WIP)
+      Value 1 or 2:                    (Value1)      (Value2)
+                'off' is to switch to Upscroll or Sidescroll
+                'on' is to switch to Downscroll or Middlescroll
+                'swap' is to switch between them
+      Extras:
+                'default' is to switch to Default Scrolltype
+
+More maybe soon?                           ...Who knows...

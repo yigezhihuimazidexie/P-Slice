@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="bfblack.png" width="4827" height="3282">
+  <SubTexture name="down01.png" x="0" y="0"  width="828" height="739" frameX="-110" frameY="-340" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="down02.png" x="828" y="0"  width="823" height="758" frameX="-116" frameY="-321" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="left08.png" x="0" y="739"  width="820" height="842" frameX="-71" frameY="-237" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="down03.png" x="1651" y="0"  width="818" height="768" frameX="-128" frameY="-311" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="left07.png" x="820" y="758"  width="814" height="853" frameX="-61" frameY="-226" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="left06.png" x="0" y="1581"  width="809" height="855" frameX="-48" frameY="-224" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="idle02.png" x="2469" y="0"  width="805" height="820" frameX="-160" frameY="-256" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="idle01.png" x="1634" y="768"  width="799" height="823" frameX="-156" frameY="-253" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="idle03.png" x="1634" y="1591"  width="798" height="832" frameX="-172" frameY="-244" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="idle04.png" x="809" y="1611"  width="794" height="839" frameX="-182" frameY="-237" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="idle05.png" x="0" y="2436"  width="787" height="846" frameX="-178" frameY="-230" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="up03.png" x="3274" y="0"  width="784" height="897" frameX="-173" frameY="-183" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="right03.png" x="2433" y="820"  width="774" height="768" frameX="-131" frameY="-312" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="right02.png" x="2433" y="1588"  width="773" height="786" frameX="-133" frameY="-294" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="right01.png" x="4058" y="0"  width="769" height="797" frameX="-147" frameY="-283" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="up02.png" x="4058" y="797"  width="767" height="906" frameX="-190" frameY="-174" frameWidth="1080" frameHeight="1080"/>
+  <SubTexture name="up01.png" x="3207" y="897"  width="762" height="912" frameX="-204" frameY="-168" frameWidth="1080" frameHeight="1080"/>
+</TextureAtlas>

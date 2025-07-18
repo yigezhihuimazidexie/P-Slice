@@ -1,0 +1,34 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-1,
+				0
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/dui",
+	"position": [
+		-28,
+		-435
+	],
+	"healthicon": "sb",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		-5,
+		5
+	],
+	"sing_duration": 1,
+	"scale": 0.41
+}

@@ -1,0 +1,2 @@
+Value 1:  a1-bgWhite  a2-bgBlack  b-nothing
+Value 2:  dad / bf / both

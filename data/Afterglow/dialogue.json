@@ -1,0 +1,36 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "talk",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Now I need to be serious"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "talk",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "It will be difficult next"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "talk",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Are you ready?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "pissed",
+			"text": "yep"
+		}
+	]
+}

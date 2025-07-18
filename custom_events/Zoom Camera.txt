@@ -1,0 +1,7 @@
+Zooms the camera in or out.
+
+Value 1: Zoom distance
+Value 2: Time to Zoom 
+(0 or blank for instant zoom) 
+
+拉镜

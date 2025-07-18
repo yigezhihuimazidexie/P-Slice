@@ -1,0 +1,7 @@
+Tweens mirrorAngle
+
+Value 1: Angle Amount (0 default)
+Value 2: Duration (0.2 recommended)
+
+MAKE SURE THE SHADER IS ALREADY ENABLED
+Event by fregnub

@@ -1,0 +1,10 @@
+Explicado por sakar
+
+valor 1 poner con la velocidad de entra o sale
+minimo asta (0.2)
+
+valor 2 distancia del movimiento de la  barra 
+(recomendado 90) (si se pone (0) termina el evento)
+
+
+黑条2

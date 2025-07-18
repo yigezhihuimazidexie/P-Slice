@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				37,
+				9
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "singUP",
+			"indices": [],
+			"name": "tr Up"
+		},
+		{
+			"offsets": [
+				-54,
+				-26
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "tr Left"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "idle",
+			"indices": [],
+			"name": "tr Idle"
+		},
+		{
+			"offsets": [
+				66,
+				-7
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "tr Right"
+		},
+		{
+			"offsets": [
+				26,
+				-11
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "tr Down"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/Minni-6h",
+	"position": [
+		-310,
+		-460
+	],
+	"healthicon": "icon-FK6H",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		255
+	],
+	"camera_position": [
+		-370,
+		510
+	],
+	"sing_duration": 4,
+	"scale": 0.4
+}

@@ -1,0 +1,6 @@
+Put a ogg file in mods/sounds
+
+Value 1: sound file name
+Value 2: volume
+Ranges from 0 to 1.
+(Default: 1) 

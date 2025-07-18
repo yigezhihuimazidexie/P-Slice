@@ -1,0 +1,130 @@
+{
+	"song": {
+		"events": [
+			[
+				62307.6923076923,
+				[
+					[
+						"Change Character",
+						"GF",
+						"yurib2"
+					],
+					[
+						"Flash Camera",
+						"0.5",
+						""
+					]
+				],
+				null,
+				""
+			],
+			[
+				76615.3846153846,
+				[
+					[
+						"Add Camera Zoom",
+						"0.3",
+						"0.3"
+					]
+				]
+			],
+			[
+				76846.1538461538,
+				[
+					[
+						"Add Camera Zoom",
+						"0.3",
+						"0.3"
+					]
+				]
+			],
+			[
+				77076.923076923,
+				[
+					[
+						"Add Camera Zoom",
+						"0.3",
+						"0.3"
+					]
+				]
+			],
+			[
+				77307.6923076923,
+				[
+					[
+						"Add Camera Zoom",
+						"0.3",
+						"0.3"
+					]
+				]
+			],
+			[
+				147230.769230769,
+				[
+					[
+						"Change Character",
+						"GF",
+						"noone"
+					],
+					[
+						"Flash Camera",
+						"0.5",
+						""
+					]
+				],
+				null,
+				""
+			],
+			[
+				147692.307692308,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"Dad"
+					]
+				]
+			],
+			[
+				147923.076923077,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"Dad"
+					]
+				]
+			],
+			[
+				148153.846153846,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"Dad"
+					]
+				]
+			],
+			[
+				148384.615384615,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"Dad"
+					]
+				]
+			],
+			[
+				148615.384615385,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"Dad"
+					]
+				]
+			]
+		]
+	}
+}

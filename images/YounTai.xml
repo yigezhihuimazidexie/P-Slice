@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="yt.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle0000" x="0" y="0" width="378" height="869" frameX="-2" frameY="-7" frameWidth="384" frameHeight="876"/>
+	<SubTexture name="idle0001" x="0" y="0" width="378" height="869" frameX="-2" frameY="-7" frameWidth="384" frameHeight="876"/>
+	<SubTexture name="idle0002" x="378" y="0" width="384" height="876"/>
+	<SubTexture name="idle0003" x="378" y="0" width="384" height="876"/>
+	<SubTexture name="idle0004" x="762" y="0" width="379" height="871" frameX="-1" frameY="-5" frameWidth="384" frameHeight="876"/>
+	<SubTexture name="idle0005" x="762" y="0" width="379" height="871" frameX="-1" frameY="-5" frameWidth="384" frameHeight="876"/>
+	<SubTexture name="idle0006" x="1141" y="0" width="378" height="869" frameX="-1" frameY="-7" frameWidth="384" frameHeight="876"/>
+	<SubTexture name="idle0007" x="1141" y="0" width="378" height="869" frameX="-1" frameY="-7" frameWidth="384" frameHeight="876"/>
+	<SubTexture name="idle0008" x="1519" y="0" width="379" height="870" frameX="-1" frameY="-6" frameWidth="384" frameHeight="876"/>
+	<SubTexture name="idle0009" x="1519" y="0" width="379" height="870" frameX="-1" frameY="-6" frameWidth="384" frameHeight="876"/>
+	<SubTexture name="idle0010" x="1519" y="0" width="379" height="870" frameX="-1" frameY="-6" frameWidth="384" frameHeight="876"/>
+	<SubTexture name="idle0011" x="1519" y="0" width="379" height="870" frameX="-1" frameY="-6" frameWidth="384" frameHeight="876"/>
+	<SubTexture name="idle0012" x="1519" y="0" width="379" height="870" frameX="-1" frameY="-6" frameWidth="384" frameHeight="876"/>
+	<SubTexture name="idle0013" x="1519" y="0" width="379" height="870" frameX="-1" frameY="-6" frameWidth="384" frameHeight="876"/>
+	<SubTexture name="idle0014" x="1519" y="0" width="379" height="870" frameX="-1" frameY="-6" frameWidth="384" frameHeight="876"/>
+</TextureAtlas>

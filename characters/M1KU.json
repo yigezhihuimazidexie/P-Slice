@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-20,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle_miku"
+		},
+		{
+			"offsets": [
+				130,
+				29
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left_miku"
+		},
+		{
+			"offsets": [
+				-48,
+				-85
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down_miku"
+		},
+		{
+			"offsets": [
+				0,
+				76
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up_miku"
+		},
+		{
+			"offsets": [
+				10,
+				16
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right_miku"
+		},
+		{
+			"offsets": [
+				31,
+				22
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "scream",
+			"loop": false,
+			"name": "scream"
+		},
+		{
+			"offsets": [
+				-20,
+				2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "cmon_bby",
+			"loop": false,
+			"name": "come_on_baby_pose_miku"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/M1KU",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "M1KU",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		255,
+		247
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

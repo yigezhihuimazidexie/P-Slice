@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="123.png" width="1920" height="360">
+  <SubTexture name="q1.png" x="0" y="0"  width="640" height="360" frameX="-0" frameY="-0" frameWidth="640" frameHeight="360"/>
+  <SubTexture name="q2.png" x="640" y="0"  width="640" height="360" frameX="-0" frameY="-0" frameWidth="640" frameHeight="360"/>
+  <SubTexture name="q3.png" x="1280" y="0"  width="640" height="360" frameX="-0" frameY="-0" frameWidth="640" frameHeight="360"/>
+</TextureAtlas>

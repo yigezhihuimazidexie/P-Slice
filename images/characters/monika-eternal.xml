@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="monika-eternal.png">
+<SubTexture name="monika-eternal idle0000" x="0" y="0" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0001" x="351" y="0" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0002" x="702" y="0" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0003" x="1053" y="0" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0004" x="1404" y="0" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0005" x="1053" y="0" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0006" x="702" y="0" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0007" x="0" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0008" x="351" y="0" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0009" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0010" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0011" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0012" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0013" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0014" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0015" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0016" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0017" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0018" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0019" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0020" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0021" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0022" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal idle0023" x="351" y="609" width="351" height="609" frameX="-461" frameY="-79" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal singDOWN0000" x="702" y="609" width="359" height="593" frameX="-468" frameY="-102" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal singDOWN0001" x="1061" y="609" width="350" height="602" frameX="-473" frameY="-93" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal singLEFT0000" x="1411" y="609" width="368" height="611" frameX="-443" frameY="-78" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal singLEFT0001" x="0" y="1220" width="362" height="611" frameX="-452" frameY="-78" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal singUP0000" x="362" y="1220" width="365" height="629" frameX="-458" frameY="-60" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal singUP0001" x="727" y="1220" width="362" height="623" frameX="-461" frameY="-66" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal singRIGHT0000" x="1089" y="1220" width="357" height="609" frameX="-480" frameY="-80" frameWidth="1280" frameHeight="720" />
+<SubTexture name="monika-eternal singRIGHT0001" x="1446" y="1220" width="351" height="609" frameX="-479" frameY="-80" frameWidth="1280" frameHeight="720" />
+</TextureAtlas>

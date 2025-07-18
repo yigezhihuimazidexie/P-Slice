@@ -1,0 +1,122 @@
+{
+	"storyName": "17bucks",
+	"difficulties": "buck",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"17bucks",
+			"pk",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"kevinteenbucks",
+			"kev",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"susie",
+			"cycl",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"hoagie",
+			"hoagie",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"hanky-panky",
+			"cycl",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Boulevard",
+			"john2",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"feeling-b",
+			"alien",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"fitin",
+			"othersos",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"jeans",
+			"cycl",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"dribi",
+			"cycl",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"miku",
+			"cycl",
+			[
+				255,
+				255,
+				255
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "Custom Week",
+	"hiddenUntilUnlocked": false
+}

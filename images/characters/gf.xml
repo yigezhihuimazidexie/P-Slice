@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="gf.png" width="6390" height="7039">
+  <SubTexture name="Up26.png" x="0" y="0"  width="1278" height="1196" frameX="-87" frameY="-191" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="hey36.png" x="0" y="1196"  width="1278" height="1190" frameX="-87" frameY="-197" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Up27.png" x="1278" y="0"  width="1278" height="1184" frameX="-87" frameY="-203" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Up28.png" x="1278" y="1184"  width="1278" height="1181" frameX="-87" frameY="-206" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceRight12.png" x="1278" y="2365"  width="1278" height="1181" frameX="-87" frameY="-206" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceRight13.png" x="0" y="2386"  width="1278" height="1180" frameX="-87" frameY="-207" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="hey37.png" x="2556" y="0"  width="1278" height="1180" frameX="-87" frameY="-207" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Left16.png" x="2556" y="1180"  width="1278" height="1179" frameX="-87" frameY="-208" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceRight11.png" x="2556" y="2359"  width="1278" height="1178" frameX="-87" frameY="-209" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceRight14.png" x="2556" y="3537"  width="1278" height="1178" frameX="-87" frameY="-209" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="hey38.png" x="1278" y="3546"  width="1278" height="1178" frameX="-87" frameY="-209" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Left17.png" x="0" y="3566"  width="1278" height="1177" frameX="-87" frameY="-210" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Left18.png" x="3834" y="0"  width="1278" height="1176" frameX="-87" frameY="-211" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceRight15.png" x="3834" y="1176"  width="1278" height="1175" frameX="-87" frameY="-212" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceLeft07.png" x="3834" y="2351"  width="1278" height="1173" frameX="-87" frameY="-214" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceRight10.png" x="3834" y="3524"  width="1278" height="1173" frameX="-87" frameY="-214" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceLeft01.png" x="3834" y="4697"  width="1278" height="1171" frameX="-87" frameY="-216" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceRight09.png" x="2556" y="4715"  width="1278" height="1171" frameX="-87" frameY="-216" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceLeft02.png" x="1278" y="4724"  width="1278" height="1170" frameX="-87" frameY="-217" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Right33.png" x="0" y="4743"  width="1278" height="1169" frameX="-87" frameY="-218" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Right32.png" x="5112" y="0"  width="1278" height="1168" frameX="-87" frameY="-219" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceLeft06.png" x="5112" y="1168"  width="1278" height="1168" frameX="-87" frameY="-219" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Right31.png" x="5112" y="2336"  width="1278" height="1166" frameX="-87" frameY="-221" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Down23.png" x="5112" y="3502"  width="1278" height="1161" frameX="-87" frameY="-226" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Down22.png" x="5112" y="4663"  width="1278" height="1159" frameX="-87" frameY="-228" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceLeft04.png" x="5112" y="5822"  width="1278" height="1155" frameX="-87" frameY="-232" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceLeft05.png" x="3834" y="5868"  width="1278" height="1155" frameX="-87" frameY="-232" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceLeft03.png" x="2556" y="5886"  width="1278" height="1153" frameX="-87" frameY="-234" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Down21.png" x="1278" y="5894"  width="1278" height="1144" frameX="-87" frameY="-243" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Down24.png" x="5112" y="3502"  width="1278" height="1161" frameX="-87" frameY="-226" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Down25.png" x="5112" y="3502"  width="1278" height="1161" frameX="-87" frameY="-226" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Left19.png" x="3834" y="0"  width="1278" height="1176" frameX="-87" frameY="-211" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Left20.png" x="3834" y="0"  width="1278" height="1176" frameX="-87" frameY="-211" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Right34.png" x="0" y="4743"  width="1278" height="1169" frameX="-87" frameY="-218" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Right35.png" x="0" y="4743"  width="1278" height="1169" frameX="-87" frameY="-218" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Up29.png" x="1278" y="1184"  width="1278" height="1181" frameX="-87" frameY="-206" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="Up30.png" x="1278" y="1184"  width="1278" height="1181" frameX="-87" frameY="-206" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="danceLeft08.png" x="3834" y="4697"  width="1278" height="1171" frameX="-87" frameY="-216" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="hey39.png" x="1278" y="3546"  width="1278" height="1178" frameX="-87" frameY="-209" frameWidth="1500" frameHeight="1480"/>
+  <SubTexture name="hey40.png" x="1278" y="3546"  width="1278" height="1178" frameX="-87" frameY="-209" frameWidth="1500" frameHeight="1480"/>
+</TextureAtlas>
