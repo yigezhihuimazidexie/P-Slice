@@ -1654,33 +1654,33 @@ class FreeplayState extends MusicBeatSubstate
 					
 		if(text == "end"&&!busy)
 		{
-			FlxG.camera.flash(FlxColor.PINK, 0.5);
-			FlxG.sound.play(Paths.sound('confirmMenu'));
-			unlockWeek("1",true);
-			isback(4);
+			//FlxG.camera.flash(FlxColor.PINK, 0.5);
+			//FlxG.sound.play(Paths.sound('confirmMenu'));
+			//unlockWeek("1",true);
+			//isback(4);
 		} 
 		else if(text == "sus"&&!busy) 
 		{
-			FlxG.camera.flash(FlxColor.PINK, 0.5);
-			FlxG.sound.play(Paths.sound('confirmMenu'));
-			unlockWeek("sky",true);
-			isback(6);
+			//FlxG.camera.flash(FlxColor.PINK, 0.5);
+			//FlxG.sound.play(Paths.sound('confirmMenu'));
+			//unlockWeek("sky",true);
+			//isback(6);
 		} 
 		else if(text == "love"&&!busy)
 		{
-			FlxG.camera.flash(FlxColor.PINK, 0.5);
-			FlxG.sound.play(Paths.sound('confirmMenu'));
-			unlockWeek("love",true);
-			isback(5);
+			//FlxG.camera.flash(FlxColor.PINK, 0.5);
+			//FlxG.sound.play(Paths.sound('confirmMenu'));
+			//unlockWeek("love",true);
+			//isback(5);
 		}
 		else if(text == "close"&&!busy&&!isclose)
 		{
-			isclose=true;
-			FlxG.camera.flash(FlxColor.PINK, 0.5);
-			FlxG.sound.play(Paths.sound('confirmMenu'));
-			unlockWeek("1",false);
-			unlockWeek("sky",false);
-			unlockWeek("love",false);
+			//isclose=true;
+			//FlxG.camera.flash(FlxColor.PINK, 0.5);
+			//FlxG.sound.play(Paths.sound('confirmMenu'));
+			//unlockWeek("1",false);
+			//unlockWeek("sky",false);
+			//unlockWeek("love",false);
 		}
 		
 
@@ -1722,12 +1722,12 @@ class FreeplayState extends MusicBeatSubstate
 			{
 				if(!isshowing)
 				{
-					FlxTween.tween(loveInputText, {y: FlxG.height - 50}, 0.7, {ease: FlxEase.quartInOut});
-					isshowing=true;
+					//FlxTween.tween(loveInputText, {y: FlxG.height - 50}, 0.7, {ease: FlxEase.quartInOut});
+					//isshowing=true;
 				}
 				else{
-					FlxTween.tween(loveInputText, {y: FlxG.height + 500}, 0.7, {ease: FlxEase.quartInOut});
-					isshowing=false;
+					//FlxTween.tween(loveInputText, {y: FlxG.height + 500}, 0.7, {ease: FlxEase.quartInOut});
+					//isshowing=false;
 				}
 			} //? Those are new too
 			else if (FlxG.keys.justPressed.CONTROL #if TOUCH_CONTROLS_ALLOWED || touchPad?.buttonC.justPressed #end)
